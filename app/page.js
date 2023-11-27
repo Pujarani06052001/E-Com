@@ -1,8 +1,19 @@
-import Image from 'next/image'
-import styles from './page.module.css'
 
-export default function Home() {
-  return (
-     <h1>Hello World</h1>
+
+import Home from "./Home";
+import Footer from "./Footer.js"
+import Carousel from "./Carousel";
+
+const page = () => {
+ 
+    return(
+      <>
+      {/* <Carousel/> */}
+      <Home />
+      <Footer/>
+      </>
     )
-}
+  
+};
+
+export default page;
