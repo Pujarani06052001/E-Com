@@ -1,15 +1,15 @@
 
 
-import Home from "./Home";
+import Alldata from "./Alldata";
 import Footer from "./Footer.js"
-import Carousel from "./Carousel";
+import Carousel from "./carousel";
 
 const page = () => {
  
     return(
       <>
-      {/* <Carousel/> */}
-      <Home />
+      < Carousel/>
+      <Alldata />
       <Footer/>
       </>
     )
