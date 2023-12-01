@@ -8,9 +8,6 @@ module.exports = {
     eslint: {
       ignoreDuringBuilds: true,
     },
-    experimental: {
-      reactRoot: true,
-    },
     onDemandEntries: {
       maxInactiveAge: 25 * 1000,
       pagesBufferLength: 2,
