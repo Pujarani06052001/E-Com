@@ -8,7 +8,6 @@ const page = () => {
  
     return(
       <>
-      {/* <Carousel/> */}
       <Home />
       <Footer/>
       </>

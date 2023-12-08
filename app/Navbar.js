@@ -16,6 +16,7 @@ const Nav = () => {
                     <a href="/About" class="nav-item nav-link">About</a>
                     <a href="/Contact" class="nav-item nav-link">Contact</a>
                     <a href="/Product" class="nav-item nav-link">product</a>
+                    <a href="/Beautyproduct" class="nav-item nav-link">Beautyproduct</a>
                 </div>
                 <form class="d-flex">
                     <div class="input-group">
