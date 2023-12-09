@@ -1,5 +1,3 @@
-
-
 import Home from "./Home";
 import Footer from "./Footer.js"
 import Carousel from "./Carousel";
