@@ -1,12 +1,12 @@
 import Link from 'next/link';
 import React from 'react'
 
-const product = () => {
+const Eectronics = () => {
   return (
     <>
-    <div>Welcome to product</div>
+    <div>electronics</div>
     </>
   )
 }
 
-export default product;
+export default Eectronics;

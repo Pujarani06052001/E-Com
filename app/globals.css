@@ -1,5 +1,5 @@
 *{
-  background-color: white;
+  background-color:azure;
 }
 h3 {
     position: relative;
@@ -45,16 +45,4 @@ body {
   text-align: center;
   height: 500px;
 }
- .row{
-  height: 1590px;
-  width: 1500px;
-
-}
-
-.col{
-  height: 390px;
-  width: 700px;
-
-
-} 
-
+ 
