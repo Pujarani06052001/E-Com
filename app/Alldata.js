@@ -16,20 +16,23 @@ const Alldata = () => {
   }, []);
 
   return (
-    <div>
-      <div className='row'>
+    <div className='container-fluid ' style={{border:"solid"   }}>
+      <div className='row'  >
         {myData.map((product) => {
           const { id, title, description, image, price } = product;
           return (
-            <div key={id} className="col"> 
-              <img src={image} alt={title} />
-              <p>Price: ${price}</p>   
+            <div  key={id} className="col" style={{border:"solid", color:"black", margin:"4px"}}> 
+              <img src={image} alt={title}   />
+              <p style={{ color:" black"}}>${title} </p> 
+              <p style={{ color:" black"}}>Price: ${price} </p>
+              <p style={{  color:" black"}}> Id: ${ id} </p>  
+                
+                
             </div>
           );
         })}
       </div>
     </div>
-
   );
 };
 
