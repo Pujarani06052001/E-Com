@@ -3,16 +3,17 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 
 const Alldata = () => {
-  const [myData,setMyData]=useState([])
+  const [myData, setMyData] = useState([]);
+
   useEffect(() => {
-    axios.get("https://fakestoreapi.com/products")
+    axios
+      .get("https://fakestoreapi.com/products")
       .then((res) => {
-        setMyData(res.data); 
+        setMyData(res.data);
       })
       .catch((error) => {
         console.error("Error fetching data:", error);
       });
-
   }, []);
 
   const groupedData = myData.reduce((acc, product) => {
@@ -25,6 +26,22 @@ const Alldata = () => {
   }, {});
 
   return (
+<<<<<<< HEAD
+    <>
+      <div className='border border-primary '>
+        {Object.entries(groupedData).map(([category, products]) => (
+          <div key={category} className='row border border-primary  '>
+            <h3>{category}</h3>
+            <div className='row '>
+              {products.map((product) => (
+                <div key={product.id} className="col border  border border-dark rounded-top rounded-right rounded-left rounded-bottom"> 
+                  <img src={product.image} alt={product.title} />
+                  <h5>{product.title}</h5>
+                  <p>Price: ${product.price}</p>
+                </div>
+
+              ))}
+=======
     <div className='container-fluid ' style={{border:"solid"   }}>
       <div className='row'  >
         {myData.map((product) => {
@@ -37,11 +54,17 @@ const Alldata = () => {
               <p style={{  color:" black"}}> Id: ${ id} </p>  
                 
                 
+>>>>>>> e9462c0f25b3d9a9f1f9b1cb1c8486a0cbb38073
             </div>
-          );
-        })}
+            <div className='col-auto bg-primary'><a href="/Product_listing" class="text-white">viwe all</a></div>
+          </div>
+        ))}
       </div>
+<<<<<<< HEAD
+    </>
+=======
     </div>
+>>>>>>> e9462c0f25b3d9a9f1f9b1cb1c8486a0cbb38073
   );
 };
 

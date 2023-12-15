@@ -22,7 +22,17 @@ const Nav = () => {
                 <div className="navbar-nav">
                  {/* <img src="https://images.rawpixel.com/image_png_social_square/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTExL2pvYjE0MjgtZWxlbWVudC0xMDctcC5wbmc.png" alt="Description of the image"></img> */}
                 </div>
+<<<<<<< HEAD
                
+=======
+
+                <div class="navbar-nav">
+                    <a href="#" class="nav-item nav-link">Order</a>
+                </div>
+                <div class="navbar-nav">
+                    <a href="#" class="nav-item nav-link">Login</a>
+                </div>
+>>>>>>> e9462c0f25b3d9a9f1f9b1cb1c8486a0cbb38073
                 
             </div>
         </div>
@@ -30,4 +40,9 @@ const Nav = () => {
   );
 };
 
+<<<<<<< HEAD
 export default Nav;
+=======
+export default Nav;
+
+>>>>>>> e9462c0f25b3d9a9f1f9b1cb1c8486a0cbb38073
