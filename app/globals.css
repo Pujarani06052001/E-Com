@@ -1,4 +1,5 @@
 *{
+  position: relative;
   background-color:azure;
 }
 h3 {
@@ -16,6 +17,8 @@ h3 {
   }
   
 body {
+  position: relative;
+
   margin: 0;
   font-family: 'Roboto', sans-serif;
 }
@@ -28,17 +31,11 @@ body {
 .form-control {
   border-radius: 20px;
 }
-@media (max-width: 768px) {
-  .navbar-toggler {
-    background-color: #007bff;
-  }
 
-  .navbar-nav {
-    margin-top: 10px;
-  }
-}
 
 .footer {
+  position: relative;
+
   background-color: #333; 
   color: #fff;
   padding: 20px;

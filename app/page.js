@@ -8,6 +8,7 @@ import Footer from "./Footer.js";
 const page = () => {
     return(
       <>
+      
       <Carousel/>
       <Alldata />
       <Footer/>
