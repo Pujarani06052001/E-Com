@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-function Product_listing({ params }) {
+function Productlisting({ params }) {
   const [productDetails, setProductDetails] = useState(null);
 
   const fetchProductDetails = () => {
@@ -23,12 +23,12 @@ function Product_listing({ params }) {
   if (!productDetails) {
     return <div>Loading...</div>;
   }
-
   return (
     <div style={{ border: "solid 2px red" }}>
       <h1>{params.category} Details</h1>
-      {productDetails.map((product) => (
-        product.category === params.category && (
+      {productDetails
+        .filter((product) => product.category === params.category)
+        .map((product) => (
           <div key={product.id}>
             <img
               src={product.image}
@@ -39,10 +39,31 @@ function Product_listing({ params }) {
             <p>Category: {product.category}</p>
             <hr />
           </div>
-        )
-      ))}
+        ))}
     </div>
   );
+
 }  
 
-export default Product_listing;
+export default Productlisting;
+
+
+// return (
+//   <div style={{ border: "solid 2px red" }}>
+//     <h1>{params.category} Details</h1>
+//     {productDetails.map((product) => (
+//       product.category === params.category && (
+//         <div key={product.id}>
+//           <img
+//             src={product.image}
+//             style={{ width: '350px', height: '300px', borderRadius: '8px' }}
+//           />
+//           <p>Product ID: {product.id}</p>
+//           <p>Title: {product.title}</p>
+//           <p>Category: {product.category}</p>
+//           <hr />
+//         </div>
+//       )
+//     ))}
+//   </div>
+// );
